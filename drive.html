@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title> CMPS160 Base Code </title>
+
+
+  <!--Import CSS Styling-->
+  <link rel="stylesheet" href="drive.css">
+
+  <!-- Include external libs -->
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-render.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/webgl-loader.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix.js"></script>
+
+  <!-- Include shaders -->
+  <script src="src/graphics/shaders/shader.js"></script>
+  <script src="src/graphics/shaders/regshade.js"></script>
+  <script src = "src/graphics/shaders/shipshade.js"></script>
+
+
+
+  <!-- Include Base code -->
+  <script src="src/graphics/geometry/vertex.js"></script>
+  <script src="src/graphics/geometry/geometry.js"></script>
+  <script src="src/graphics/geometry/shapes/asteroid.js"></script>
+  <script src="src/graphics/geometry/shapes/ship.js"></script>
+  <script src="src/graphics/geometry/shapes/explosion.js"></script>
+  <script src="src/graphics/geometry/shapes/bullet.js"></script>
+  <script src="src/graphics/geometry/shapes/square.js"></script>
+  <script src="src/graphics/renderer.js"></script>
+  <script src="src/graphics/scene.js"></script>
+  <script src="src/main.js"></script>
+  <script src="src/input.js"></script>
+</head>
+
+<body onload="main()" style="margin-top: 0px">
+  <div class="row">
+
+    <div class="column">
+      <div>
+        <div>
+          <canvas id="webgl" width="600" height="600" style="position: absolute; z-index: 0">
+            Please use a browser that supports "canvas"
+          </canvas>
+          <canvas id="hud" width="600" height="600" style="position: absolute; z-index: 1">
+            Please use a browser that supports "canvas"
+          </canvas>
+        </div>
+        <div> <button class="button button1" onclick="clear()" type="button" id="clear" style="padding-top: 5px"> Reload Page </button> </div>
+      </div>
+    </div>
+    </div>
+</body>
+
+</html>

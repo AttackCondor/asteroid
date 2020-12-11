@@ -1,0 +1,105 @@
+/*
+CSS Styling for CS 160 assignment pages
+William Connor Koch
+*/
+
+.button {
+    background-color: white;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px double black;
+  }
+
+.button1:hover {
+    background-color: black;
+    color: white;
+  }
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.canvascontainer{
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    display: inline-block;
+}
+
+.bordercontainer{
+    display: inline;
+    border-style: double;
+}
+
+.headline{
+    border-left: 6px double black;
+    border-bottom: 6px double black;
+    background-color: lightgrey;
+    font-size: 32pt;
+    text-decoration: bold;
+    text-decoration-style: double;   
+    margin-bottom: 20px; 
+    margin-left: 30px; 
+  }
+
+.containercenter{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.selectionlabel{
+    padding-bottom: 5px; 
+    padding-top: 8px; 
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+    .row{
+        display: block;
+    }
+
+     .column {
+         flex: 100%;
+      }
+
+    .canvascontainer{
+        height: 400px;
+        width: 400px;
+        padding-bottom: 20px;
+    }
+    
+  }
